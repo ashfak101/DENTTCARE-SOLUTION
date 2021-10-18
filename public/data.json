@@ -1,0 +1,38 @@
+[
+    {
+      "name": "General Dentistry",
+      "img": "https://i.ibb.co/y4ZJCzM/img1.jpg",
+      "description": "General Dentistry Oral Health Counseling Oral Hygiene Instruction Cleanings & Polishing Atraumatic restorative filling treatment White filling Extraction & Impaction World Class Facilities Who is the one health care provider you see more than any [...]",
+      "id": 1
+    },
+    {
+      "name": "Cosmetic dentistry",
+      "img": "https://i.ibb.co/jzJwwyv/img2.jpg",
+      "description": "Cosmetic dentistry is generally used to refer to any dental work that improves the appearance (though not necessarily the functionality) of teeth, gums and/or bite. It primarily focuses on improvement in dental aesthetics in color, position, shape, size, alignment and overall smile appearance",
+      "id": 2
+    },
+    {
+      "name": "Surgical Dentistry",
+      "img": "https://i.ibb.co/X4Mp7hH/img3.jpg",
+      "description": "description:-Oral and maxillofacial surgery is a surgical specialty focusing on reconstructive surgery of the face, facial trauma surgery, the oral cavity, head and neck, mouth, and jaws, as well as facial cosmetic surgery",
+      "id": 3
+    },
+    {
+      "name": "Restorative Dentistry",
+      "img": "https://i.ibb.co/K6bxFCn/img4.jpg",
+      "description": "is the study, diagnosis and integrated management of diseases of the teeth and their supporting structures and the rehabilitation of the dentition to functional and aesthetic requirements of the individual. Restorative dentistry encompasses the dental specialties of endodontics, periodontics and prosthodontics and its foundation is based upon how these interact in cases requiring multifaceted care.",
+      "id": 4
+    },
+    {
+      "name": "Pediatric Dentistry",
+      "img": "https://i.ibb.co/1fBY6J8/img5.jpg",
+      "description": "Pediatric dentistry is one of the ten dental specialties recognized by American Dental Association. Other specialties include dental public health, endodontics, oral and maxillofacial pathology, oral and maxillofacial radiology, oral and maxillofacial surgery, orthodontics and dentofacial orthopedics, periodontics, and prosthodontics",
+      "id": 5
+    },
+    {
+      "name": "Teeth Orthodontics",
+      "img": "https://i.ibb.co/bdzXV4L/img6.jpg",
+      "description": "Orthodontics is a dentistry specialty that addresses the diagnosis, prevention, and correction of mal-positioned teeth and jaws, and misaligned bite patterns. It may also address the modification of facial growth, known as dentofacial orthopedics. Abnormal alignment of the teeth and jaws is very common.",
+      "id": 6
+    }
+  ]
