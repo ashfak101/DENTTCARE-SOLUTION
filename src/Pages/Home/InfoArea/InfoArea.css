@@ -1,0 +1,23 @@
+.info-box{
+    color: #343a40;
+    padding: 50px 29px;
+    text-align: center;
+    background-color: rgb(248, 246, 246);
+    margin-bottom: 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.info-box:hover{
+    color: #fff;
+    background-color: #FDAF33;
+    transition: 0.4s;
+}
+.info-head{
+    color: #343a40;
+}
+.info-head h1 span{
+    color: #FDAF33;
+    font-weight: 900;
+    font-size: 55px;
+
+}

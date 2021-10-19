@@ -1,0 +1,13 @@
+.app-from{
+    margin:30px 550px;
+}
+.app-from input{
+    display: block;
+    margin-top: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 300px;
+}
+.error{
+    color: red;
+}

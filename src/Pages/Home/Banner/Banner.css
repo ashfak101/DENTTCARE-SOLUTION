@@ -1,0 +1,23 @@
+.bg{
+    background-color: #1d1d1d;
+}
+
+.p-top-bot{
+    padding: 60px 2px;
+}
+.h-heading
+{    
+    font-size: 60px;
+    text-transform: uppercase;
+   /* -webkit-text-fill-color: #FDAF33; */
+  
+   
+}
+.h-heading span{
+    color:#FDAF33 ;
+}
+.title{
+    color:#FDAF33 ;
+    font-size: 40px;
+}
+

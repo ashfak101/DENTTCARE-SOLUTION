@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Getting Started 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
+## About This Project
+-Developed an application with appointment options for patient  
 In the project directory, you can run:
+-Authenticated users can get appointment
+-Authenticated users can see a service detaile
+-This website based on Medical related
+-its an dental hospital
 
 ### `npm start`
 
