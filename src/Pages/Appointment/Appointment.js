@@ -10,9 +10,9 @@ const Appointment = () => {
   console.log(watch("example")); // watch input value by passing the name of it
     return (
         
-        <div >
-
-        <form onSubmit={handleSubmit(onSubmit)} className="app-from">
+        <div  className="container ">
+          <h1 className='text-center mt-5 text-warning' >Book Your Appointment</h1>
+        <form onSubmit={handleSubmit(onSubmit)} className="app-from ">
         {/* register your input into the hook by invoking the "register" function */}
         <input className="" defaultValue={user.displayName} {...register("name")} />
         
@@ -23,9 +23,9 @@ const Appointment = () => {
         <input {...register("address" )} placeholder='Address'/>
         <input {...register("city")} placeholder='City' />
         <input {...register("phone")} placeholder='Phone' />
+        <input type="date" name="Date" id=""  />
         
-        
-        <input type="submit" value="Get Appointment" />
+        <input className="btn-warning" type="submit" value="Get Appointment" />
       </form>
         </div>
     );

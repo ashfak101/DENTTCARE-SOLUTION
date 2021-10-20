@@ -1,13 +1,32 @@
-import { getAuth,signInWithPopup,GoogleAuthProvider,onAuthStateChanged,createUserWithEmailAndPassword,signOut ,signInWithEmailAndPassword   } from "firebase/auth";
+import { getAuth,updateProfile,signInWithPopup,GoogleAuthProvider,sendEmailVerification,onAuthStateChanged,createUserWithEmailAndPassword,signOut ,signInWithEmailAndPassword   } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Firebase/firebase.init";
 
 initializeAuthentication();
 const useFirebase=()=>{
+    const auth= getAuth();
     const [user,setUser]=useState({})
     const [isLoading,setIsLoading] =useState(true)
+   
+    
 
-    const auth= getAuth();
+    const [name,setName]=useState('')
+    const [email,setEmail]=useState('')
+    const [password,setPass]=useState('')
+      
+const handleEmail=e=>{
+    setEmail(e.target.value)
+}
+const handlePassword=e=>{
+    setPass(e.target.value)
+}
+
+    
+// Evnet handleing for Name
+const handleName=e=>{
+    setName(e.target.value)
+} 
+
 
     const signInWithGoogle=()=>{
         setIsLoading(true)
@@ -20,13 +39,14 @@ const useFirebase=()=>{
         .catch(error=>{})
         .finally(()=>setIsLoading(false))
     }
-    const registerWithEmailPass=(email,password)=>{
+    const registerWithEmailPass=()=>{
         setIsLoading(true)
         createUserWithEmailAndPassword(auth,email,password)
         .then(userCredential=>{
             const loaduser = userCredential.user;
             console.log(loaduser)
-           
+            verifyEmail()
+            userName()
         })
         .catch((error)=>{
             
@@ -34,7 +54,19 @@ const useFirebase=()=>{
           .finally(()=>setIsLoading(false))
     }
    
-    const userLogin=(email ,password)=>{
+    const userName=()=>{
+        updateProfile (auth.currentUser,{
+            displayName: name
+          })
+          .then(result=>{})
+    }
+    const verifyEmail=()=>{
+        sendEmailVerification(auth.currentUser)
+        .then(result=>{
+          console.log(result)
+        }) 
+      }
+    const userLogin=( )=>{
         setIsLoading(true)
         signInWithEmailAndPassword (auth,email,password)
         .then(result=>{
@@ -78,7 +110,9 @@ const useFirebase=()=>{
         isLoading,
         signInWithGoogle,
         registerWithEmailPass,
-       
+        handleName,
+        handlePassword,
+        handleEmail,
         userLogin,logOut}
 }
 export default useFirebase;

@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Dr. Jessica Tailor",
+      "img": "https://i.ibb.co/hs9NsKm/team1.jpg",
+      "specialist": "Oral and Maxillofacial Radiologist"
+    }, 
+    {
+      "name": "Cosmetic dentistry",
+      "img": "https://i.ibb.co/DG4J395/team2.jpg",
+      "specialist": "Oral and Maxillofacial Surgeon"
+    },
+    {
+      "name": "Surgical Dentistry",
+      "img": " https://i.ibb.co/z5DhyFJ/team3.jpg",
+      "specialist": "Pedodontist"
+    },
+    {
+      "name": "Restorative Dentistry",
+      "img": " https://i.ibb.co/cttyrtx/team4.jpg",
+      "specialist": "Orthodontist"
+    }
+   
+  ]

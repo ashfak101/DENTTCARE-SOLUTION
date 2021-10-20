@@ -33,26 +33,24 @@ const Login = () => {
     const google=<FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon>
     return (
         <div className="container">
-             <div className="row d-flex align-items-center p-top-bot ">
+             <div className="row d-flex  p-top-bot ">
              <div className="col-xl-6 col-sm-12 col-lg-6 col-md-6">
                 <img className="img-fluid  " src={loginImg} alt="banner" />
                 
                 </div>
-                <div className="col-xl-6 col-sm-12 col-lg-6 col-md-6 text-light">
+                <div className="col-xl-6 col-sm-12 col-lg-6 col-md-6 ">
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control onBlur={handleEmail} type="email" placeholder="Enter email" />
-                        <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                        </Form.Text>
+                       
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
                         <Form.Control onBlur={handlePassword} type="password" placeholder="Password" />
                     </Form.Group>
-                    <button onClick={handleLogin} className="btn btn-warning text-uppercase">Login</button>
+                    <button type='submit' onClick={handleLogin} className="btn btn-warning text-uppercase">Login</button>
                 </Form>
 
                 <div className="mt-4">
